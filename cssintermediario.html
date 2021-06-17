@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Página css</title>
+    <meta charset="utf-8">
+    <!-- TIPOS DE DISPLAY
+             Tipos: none, block, inline e inline-block
+                O display block  possui quebra de linha e pega toda a largura da tela, mas pode
+                ser estilizada para ocupar o espaço desejado com widht e height.
+
+                o display inline não possui quebra de linha e pega
+                apenas a extensão do corpo do item(textos, imagens, etc...) 
+                 pode ser estilizada.
+
+                o display inline-block não possui quebra de linha, pega a extensão do item
+                e pode ser estilizada tanto na altura quanto na largura.
+
+                o display none não mostra o objeto na tela.
+        OVERFLOW:
+            Serve para gerar um scrool(rolamento)
+            em textos ou imagens que sejam maiores que
+            o container e que não esteja aparecendo corretamente
+            
+            :overflow: scroll;
+            :overflow: hidden;
+
+        POSIÇÃO: ESTÁTICA E RELATIVA 
+        
+        
+        position: relative; Nos dá a possibilidade de usar outros
+        comandos, como: left, right,top e bottom para posicionar o elemento
+        sem modifica a das demais.
+        
+        
+        position: absolute; Nos auxilia a posicionar itens
+        de maneira a sem encaixar referente ao elemento pai
+        (obs: O elemento pai ou ascendente tem que ser diferente de static.)
+        
+        
+        position: fixed; Serve para manter um elemento fixado
+        independente do rolamento da tela.
+
+
+        position: sticky; Serve para fixar um elemento no viewport
+        mas não cubra os outros elementos, respeitando o espaço.
+        -->
+    <style type="text/css">
+        body {
+            font-size: 1.2rem;
+        }
+
+        #container {
+            color: red;
+            background-color: rgb(36, 34, 139);
+            width: 300px;
+            height: 100px;
+            overflow: scroll;
+            position:static;
+
+            
+        }
+        .quadro{
+            position:static;
+            display: block;
+            width: 900px;
+            height: 500px;
+            border: 1px solid black;
+            margin: auto;
+
+        }
+       
+        .quadrado{
+            width: 100px;
+            height: 100px;
+        }
+       
+        .quadrado-red{
+            background-color: red;
+            position: absolute;
+            right:0px;
+            bottom:0px;
+            
+        }
+        
+        .quadrado-blue{
+            background-color:blue;
+            position: relative;
+            left: 400px;
+            top: 50px;
+        }
+       
+        .quadrado-green{
+            background-color: green;
+            position: fixed;
+            right: 0px;
+            top: 400px;
+        }
+        .retangulo{
+            width: 1500px;
+            height: 50px;
+            position: sticky;
+            top: 0px;
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+
+<body>
+     <div class="quadrado retangulo">
+
+    </div>
+    <div>
+        <div>Esta é uma DIV normal</div>
+        <div>E aqui a história<div>Div de dentro</div> continua</div>
+    </div>
+
+    <div>
+        <p>Este é uma parágrafo normal</p>
+        <p>E aqui a história continua</p>
+    </div>
+
+    <p>
+        Aqui eu tenho o inicio de um parágrafo<span> um
+            SPAN no meio</span> E o fim do parágrafo.
+
+    </p>
+
+    <p>
+        Aqui eu tenho o inico de um parágrafo
+    <div> uma div no meio</div> E o fim do parágrafo.
+    </p>
+
+    <p>
+        Aqui eu tenho o incio de um parágrafo <img src="/pngwing.com.png">
+        E o fim do parágrafo.
+    </p>
+
+
+    <div id="container">Lorem Ipsum is simply dummy text of the printing
+        and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy
+        text ever since the 1500s,
+        when an unknown printer took a galley of
+        type and scrambled it to make a type specimen book.
+        It has survived not only five centuries,
+        but also the leap into electronic typesetting,
+        remaining essentially unchanged. It was popularised
+        n the 1960s with the release of Letraset sheets
+        containing Lorem Ipsum passages, and more recently with
+        desktop publishing software like Aldus PageMaker
+        including versions of Lorem Ipsum</div>
+        style="display: block; margin: auto;">
+    <!-- ALINHAMENTO HORIZONTAL
+                
+                style="display: block; margin: auto;"> O display block serve para modificar o
+            display da imagem para poder aplicar um (margin: auto;) para centralizar a foto 
+            em casos de display do tipo inline ou inline block, é necessário usar o elemento dentro
+            de uma <div> para ser alinhada horizontalmente
+    -->
+    <img src="https://i.pinimg.com/originals/97/d4/4c/97d44c85c97418325ef9300ef5a3c0ee.jpg" width="200px"
+        style="display: block; margin: auto;">
+       
+   
+    <div class="quadro">
+        <div class="quadrado quadrado-red"></div>
+        <div class="quadrado quadrado-blue"></div>
+        <div class="quadrado quadrado-green"></div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--
+ tags irmãs= estão no mesmo nível, não uma dentro da outra
+ <tag> tag de abertura
+ SITE DE DOCUMENTAÇÃO HTML: w3schools.COM
+ </tag> tag de fechamento
+ <tag>Conteúdo</tag> Estrutura html
+ FORMATAÇÃO DE TEXTO:
+   <b></b> texto em negrito ou <strong></strong>
+   <br> ou </br> serve para dar um espaço entre as informações, imagens e etc..
+-->
+<html>
+
+<head>
+    <title>Minha segunda página</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <!--Para vincular o arquivo CSS
+         rel é o tipo de relação que o arquivo tem com o html-->
+    <!--Outro método para colorir o texto em CSS
+        <style>
+            p{
+                color:blue;
+            }
+        </style>-->
+</head>
+
+
+
+
+
+
+
+
+<body id="Principal">
+    <a href="#Sentinela">Sentinela</a><!-- Está referenciando a img da página pelo id-->
+    <h1 id="Título">Título Principal</h1>
+    <hr>
+    <h2>sub-Título</h2>
+    <!--(style="color: cor;") modifica a cor do texto em questão 
+            pelo CSS de modo INLNE, mas existem outras formas.-->
+    <p id="Parágrafo"><strong> Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy
+            text ever since the 1500s,
+            when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book.
+            It has survived not only five centuries,
+            but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised
+            n the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with
+            desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.</strong></p>
+  
+  
+  
+  
+  
+  
+            <!--FORMATAÇÃO DE TEXTO:-->
+    <div id="Subp"><strong>
+            <p class="Negrito">Esse é um <b>texto em negrito</b></p>
+
+            <p class="Negrito"> e esse é um <strong>texto strong</strong></p>
+
+            <p class="Negrito"> e esse é um <i>texto itálico</i></p>
+
+            <p> e esse é um <em>texto ênfase</em></p>
+
+            <p> e esse é um <mark>texto com marcação</mark></p>
+
+            <p> e esse é um <small>texto com a tag small</small></p>
+
+            <p> e esse é um <del>texto que foi removido e substituído por esse</del></p>
+
+            <p>Esse é um <ins>texto que foi inserido</ins></p>
+
+            <p> esse é um <sub>texto subscrito</sub></p>
+
+            <p> esse é um <sup> texto sobrescrito</sup></p>
+
+
+
+
+            <a href="sobre.html">para incluir um link na página</a>
+            <!--Mostrar uma imagem que está vinculada em um link-->
+
+
+
+            <a href="https://br.pinterest.com/pin/635711303621726969/">Site do wolverine<br>
+                <!---Para incluir imagens:
+                (Widht) e (height) servem para redimensionar a imagem-->
+                <img src="https://i.pinimg.com/originals/97/d4/4c/97d44c85c97418325ef9300ef5a3c0ee.jpg" alt="Wolverine"
+                    widht=600 height=500>
+            </a>
+            <br>
+            <img id="Sentinela"
+                src="https://4.bp.blogspot.com/-sKhFpcdht1M/VVLTSxU3_wI/AAAAAAAAdIo/MXZW0O-_fQ4/s1600/Sentinela%2BRobert%2BReynolds%2BMarvel%2BComics.png"
+                width=300px>
+        </strong></div>
+
+
+
+
+    <!--Para criar uma lista desordenada UL
+             E uma lista ordenada Ol-->
+    <h2>Lista de compras</h2>
+    <ul>
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Macarrão</li>
+    </ul>
+
+
+
+
+    <h2>Lista de melhores heróis</h2>
+    <ol>
+        <li>Sentinela</li>
+        <li>Flash</li>
+        <li>Homem-Aranha</li>
+    </ol><br><br><br>
+
+
+
+
+    <div id="cm"></div>
+    <div id="mm"></div>
+    <div id="in"></div>
+    <div id="px"></div>
+    <div id="pt"></div>
+    <div id="pc"></div>
+
+
+
+
+    <div class="container1">
+        olá mundo
+        <div class="inside1">
+            olá mundo
+        </div>
+    </div>
+    <div id="base"></div>
+
+
+
+
+    <div id="container">
+        <div id="conteúdo">Texto aleatório</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br>
+</body>
+
+</html>

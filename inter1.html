@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Módulo HTML Intermediário</title>
+</head>
+
+<body>
+    <!-- CRIANDO FORMULÁRIOS
+         <form method="GET" action=""
+         usado para enviar para o backend uma requisição
+         
+             Os métodos GET e POST decidem se as informações
+         do formulário serão mostradas no endereço(domínio)
+         
+         
+            POST esconde os dados, necessário para esconder informações
+         sigilosas
+
+
+             Action= Nome do domínio. Se a área que o usuário quiser acessar
+         estiver dentro do mesmo domínio, basta colocar na action (/área_qualquer)
+             
+                Input= requisição que será enviada para o backend, 
+                Exemplo: senha, email, nome, cadastro e etc...   
+            
+            Existêm alguns tipos de checking: checkbox e radio.
+            É necessário que para cada um, tenha um "name" e um "value" para identificar 
+            o tipo de input. O Value serve para diferenciar as informações
+            dentro do mesmo tipo de input como: curso{ curso1, curso2}
+
+
+            O CHECKED serve para manter marcado uma opção no radio. 
+            
+            O RADIO serve para marcar apenas uma opção.
+            exemplo: gênero, estado civil, etinia e etc...
+            
+
+            Os botões SUBMIT e RESET não necessitam de valor ou nome,
+            , mas podem ser colocados para modificar o texto
+        -->
+    <form method="GET" action="http:/inter1.html">
+        <!-- TIPOS DE INPUT -->
+        <input type="text" name="search_query">
+        <!-- <input type="text" name="name"> -->
+        <input type="password"><br>
+        <input type="checkbox" name="curso" value="curso1">React Native<br>
+        <input type="checkbox" name="curso" value="curso2">React Js<br>
+        <input type="radio" name="gênero" value="f" checked>Fem<br>
+        <input type="radio" name="gênero" value="m">Masc<br>
+        <!-- <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar"> -->
+       
+       
+        <!-- SELECT
+           
+           
+            A tag select é usada para criar um dropbox
+            a tag também pode ser incrementada com "size" e "multiple"
+        
+           Selected deixa uma opção selecionada sem que o usuário
+         tenha escolhido 
+            -->
+        <select name="estado">
+            <option value="RJ"> Rio de Janeiro</option>
+            <br>
+            <option value="SP" selected> São Paulo</option>
+            <br>
+        </select>
+        <textarea name="mensagem"></textarea>
+        <input type="reset" value="limpar">
+        <br>
+        <input type="submit" value="enviar">
+        <br>
+
+        <!-- NOVOS INPUTS DO HTML5 -->
+
+        <input type="color" name="cor">
+        <br>
+        <input type="date" name="data" max="2030-12-31">
+        <br>
+        <input type="datetime-local" name="datatime" max="2030-12-31">
+        <br>
+        <input type="file" name="arquivo">
+        <!-- necessário que o method seja POST -->
+        <br>
+        <input type="number" name="num" max="15" min="1">
+        <br>
+        <input type="range" min="1" max="100" name="slade" value="1">
+        <br>
+        <input type="tel" name="telefone">
+        <!-- serve para mostrar um teclado numérico no celular -->
+        <br>
+        <input type="email" name="email" value="vini_silva@hotmail.com">
+
+    </form>
+
+        <!-- TAGS SEMÂNTICAS 
+            
+            Elas servem para o google  identificar e otimizar o rankiamento do 
+            elementos, considerado uma boa prática.
+        
+        -->
+        <header>
+            <!-- cabeçalho da página -->
+
+        </header>
+
+
+        <main>
+        <!-- todo conteúdo da página (Só pode uma por página) -->
+        </main>
+        
+
+        <nav>
+            <!-- Identifica uma área de navegação, como o menu -->
+
+        </nav>
+
+
+        <footer>
+            <!-- rodaapé da página -->
+
+        </footer>
+
+        <section>
+            <!-- Para criar uma sessão do seu site, comum em sites
+            jornalisticos -->
+        </section>
+
+
+        <article>
+            <!-- Usada para posicionar artigos -->
+        </article>
+
+
+
+</body>
+
+</html>

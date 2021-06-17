@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Continuação css</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="widht=device-widht, initial-scale=1.0"><!--  Serve para dar responsividade a página
+    . Necessário para se adequar a todos os tipos de tela
+    ( tablets, celulares e etc..) -->
+    
+    
+    <!-- FLOAT:
+        Usado para deixar elementos flutuando na tela
+        útil para fazer menus com itens lado a lado.
+
+        clear: right; left, bottom, top; São para limpar o efeito do float
+        -->
+    
+    <style>
+        img {
+            float: left;
+            height: 50px;
+
+
+        }
+
+        /* div{
+                position: relative;
+                top:200px;
+                border: 1px solid black;
+                overflow: auto; 
+                
+            }*/
+        ul {
+            list-style-type: none;
+            padding: 5px;
+            margin: 5px;
+            border: black solid 1px;
+            background-color: rgb(53, 88, 184);
+            overflow: auto;
+            width:80%;
+            margin: auto;
+        }
+
+        li {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-style: italic;
+            font-size: 20px;
+            border-radius: 5px;
+            border: red solid 1px;
+            padding: 15px;
+            margin-left: 100px;
+            float: left;
+            background-color: rgba(183, 183, 219, 0.418);
+        }
+
+        /* ALINHAMENTO VERTICAL 
+            
+            line-height: dependendo da altura do pai para 
+         centralizar o elemento no container
+
+         transform: translate(x,y)
+         
+         */
+        .card {
+            float: left;
+            border: 1px solid black;
+            height: 200px;
+            width: 400px;
+
+        }
+
+        .c1 {
+            background-color: red;
+            color: rgb(0, 0, 0);
+            line-height: 200px;
+            /*Só serve para alinhar se souber
+                 o valor exato do pai*/
+            text-align: center;
+        }
+
+        .card2 {
+            float: left;
+            position: relative;
+            /* Para poder mover o filho dentro do container */
+            border: 1px solid black;
+            height: 200px;
+            width: 400px;
+
+        }
+
+        .c2 {
+            position: absolute;
+            /* Para posicionar em relação ao pai */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+        /* MEDIA QUERIES:
+            No caso do screen, é usado para fazer um comportamento
+            diferente do conteúdo a medida em que tela varia o tamanho
+         */
+        @media screen and (max-width: 900px){
+            li{float: none;
+            text-align: center;
+            margin: auto;
+            width: 80%;
+            
+            }
+            ul{
+                background-color: darkcyan;
+            }
+      
+        }
+            
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li>Menu</li>
+        <li>Contatos</li>
+        <li>Placas</li>
+        <li>acessórios</li>
+        <li>pc´s</li>
+    </ul>
+    <div>
+        <img src="../placadevideo.jpg">
+        <p> Lorem Ipsum is simply dummy text of the printing
+            and typesetting industry. Lorem Ipsum has
+            been the industry's standard dummy
+            text ever since the 1500s,
+            when an unknown printer took a galley of
+            type and scrambled it to make a type specimen book.
+            It has survived not only five centuries,
+            but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised
+            n the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, and more recently with
+            desktop publishing software like Aldus PageMaker
+            including versions of Lorem Ipsum.</p>
+    </div><br>
+
+    <div class="card">
+        <div class="c1">
+            Vinícius Silva
+        </div>
+    </div>
+    <div class="card2">
+        <div class="c2">
+            Vinícius Silva
+        </div>
+    </div>
+</body>
+
+</html>
